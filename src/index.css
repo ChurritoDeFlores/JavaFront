@@ -1,0 +1,97 @@
+:root {
+    --color-primario: #00081B;
+    --color-primario-claro: #254168;
+    --color-secundario: #F1622B;
+    --color-secundario-claro: #FF9E4D;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--color-primario);
+}
+
+#root{
+    display: block;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.btn{
+    border-radius: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 0.5em;
+    text-decoration: none;
+}
+.btn-primario{
+    color: var(--color-primario-claro);
+    background-color: var(--color-secundario-claro);
+    border: inset 0.15em var(--color-primario-claro);
+}
+:hover.btn-primario{
+    color: var(--color-secundario-claro);
+    background-color: var(--color-primario-claro);
+    border: inset 0.15em var(--color-secundario-claro);
+}
+
+.btn-secundario{
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+}
+
+.card{
+    border-color: var(--color-secundario-claro);
+    border-style: inset;
+    border-radius: 0.3em;
+    padding: 2em;
+}
+.card-header{
+    font-size: 1.2em;
+    background-color: var(--color-primario-claro);
+}
+.card-body{
+    font-size: 1.2em;
+    text-align: center;
+    background-color: var(--color-primario-claro);
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    color: white;
+    padding: 0.3em;
+    border-bottom: 0.25em inset var(--color-secundario-claro);
+}
+td{
+    color: white;
+    padding: 0.5em;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    border-top: 0.2em inset var(--color-secundario-claro);
+}
+
+.form{
+    display: inline-grid;
+    justify-content:space-around;
+}
+.form-primario{
+    background-color: var(--color-primario-claro);
+    padding: 1.5em;
+}
+.form-input{
+    height: 1.5em;
+    width: 20em;
+    font-size: 1.2em;
+    color: var(--color-secundario);
+    background-color: var(--color-primario-claro);
+    border-color: var(--color-secundario-claro);
+    border-style: inset;
+    border-radius: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 0.5em
+}

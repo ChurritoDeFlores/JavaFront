@@ -1,0 +1,30 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+    height: 4em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: inset var(--color-secundario);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.topbar-img{
+    max-height: 4em;
+}
+
+.topbar .btn-primario {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 2.5em;
+    height: 1.8em;
+}
+
+.topbar .btn-primario i {
+    margin-right: 0.6em;
+}

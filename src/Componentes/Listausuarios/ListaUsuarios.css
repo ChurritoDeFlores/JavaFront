@@ -1,0 +1,12 @@
+.btn-ver{
+    color: var(--color-primario);
+    background-color: #28a745;
+}
+.btn-editar{
+    color: var(--color-primario);
+    background-color: #ffc107;
+}
+.btn-eliminar{
+    color: var(--color-primario);
+    background-color: #dc3545;
+}
