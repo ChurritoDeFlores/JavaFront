@@ -1,11 +1,12 @@
 import { useState, useEffect} from 'react'
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate} from "react-router-dom"
 import { ActualizarCliente, Guardar, MostrarCliente } from '../../Servicios/Clientes'
 import './FormUsuario.css'
 
 const FormUsuario = () => {
 
     const { id } = useParams()
+    const Navigate = useNavigate();
     const [dataUsuario, setDataUsuario]=useState({})
     const [edit, setEdit] = useState(false)
     const [fileInfo, setFileInfo] = useState(dataUsuario?.foto ? dataUsuario.foto : "Inserte una imagen")
@@ -24,6 +25,7 @@ const FormUsuario = () => {
                 await Guardar(formData);
             }
             setFileInfo(dataUsuario?.foto ? dataUsuario.foto : "Inserte una imagen")
+            Navigate('/')
         } catch (error) {
             console.error("Error al cargar usuario:", error)
         }

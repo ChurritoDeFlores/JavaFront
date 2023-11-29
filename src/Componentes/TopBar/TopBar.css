@@ -3,17 +3,18 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-primario);
-    height: 4em;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-bottom: inset var(--color-secundario);
+    height: 5.7em;
+    padding-top: 0.3em;
+    padding-left: 1.3em;
+    margin-bottom: 0.5em;
+    border-bottom: inset 0.1em var(--color-secundario);
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
 }
 .topbar-img{
-    max-height: 4em;
+    max-height: 5.7em;
 }
 
 .topbar .btn-primario {
